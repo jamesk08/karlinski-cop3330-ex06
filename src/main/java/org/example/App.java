@@ -21,8 +21,8 @@ public class App
         int retirementTarget = scanner.nextInt();
 
         int retirementAge = retirementTarget - currentAge;
-        String displayMessage = MessageFormat.format("You have {0} years left until you can retire.", retirementAge);
-        System.out.println(displayMessage);
+        String yearsLeftMessage = MessageFormat.format("You have {0} years left until you can retire.", retirementAge);
+        System.out.println(yearsLeftMessage);
 
         int currentYear = Year.now().getValue();
         String retirementYear = Integer.toString(currentYear + retirementAge);
